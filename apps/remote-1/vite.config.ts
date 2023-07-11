@@ -7,11 +7,19 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: 'shell',
-      remotes: {
-        remote1: 'http://localhost:5001/assets/remoteEntry.js',
+      name: 'remote-1',
+      filename: 'remoteEntry.js',
+      // Modules to expose
+      exposes: {
+        './App': './src/App',
       },
       shared: ['react', 'react-dom'],
     }),
   ],
+  build: {
+    modulePreload: false,
+    target: 'esnext',
+    minify: false,
+    cssCodeSplit: false,
+  },
 })
