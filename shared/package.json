@@ -1,12 +1,14 @@
 {
-    "name": "shared",
-    "version": "1.0.0",
-    "description": "",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 0"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC"
+  "name": "shared",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "styled-components": "^6.0.3"
   }
-  
+}
